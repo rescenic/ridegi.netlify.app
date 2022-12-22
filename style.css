@@ -1,113 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-body {
-    background-color: black;
-    color: white;
+body{
+  height: 100vh;
+  background-image: url(assets/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("assets/main-bg.jpg");
-    /* background-size: cover; */
-    background-size:contain;
-    background-position: center;
-    background-repeat:no-repeat;
+/* Bagian navigasi */
+
+ol{
+  background-color: rgb(0, 0, 0, 0.25);
+  height: 75px;
 }
 
-.menu {
-    padding: 10px 10%;
+a{
+  /* color: rgb(255, 255, 255); */
+  font-size: 28px;
+  color: rgb(255, 255, 255);
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ol >li > a{
+  text-decoration: none;
 }
 
-.logo {
-    width: 140px;
+ol >li{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px 20px;
+#Home, #Work, #Contact, #AboutMe, #SignUp, #Login{
+  font-size: 24px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    position: relative;
+#Logo{
+  margin:20px;
 }
 
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: red;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+#Home, #Work, #Contact, #AboutMe{
+  margin: 10px;
 }
 
-nav ul li a:hover::after {
-    width: 100%;
+#SignUp{
+  margin-left: 80vh;
 }
 
-.header-text {
-    margin-top: 20%;
-    font-size: 25px;
+#Login{
+  margin-left: 10px;
 }
 
-.header-text h1 {
-    font-size: 40px;
-    margin-top: 20px;
+/* Bagian Konten */
+
+#Konten{
+  margin: 150px;
 }
 
-.header-text h1 span {
-    color: red;
-    font-family: 'Hachi Maru Pop', cursive;
+#Judul, #SubJudul{
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-.about {
-    padding: 10px 10%;
+#Judul{
+  font-size: 64px;
 }
 
-/* unvisited link */
-.about a:link {
-    color: gold;
+#SubJudul{
+  font-size: 32px;
+  margin: 20px;
 }
 
-/* visited link */
-.about a:visited {
-    color: orange;
+#TombolPlayNow{
+  font-size: 20px;
+  background-color: rgb(255, 194, 81);
+  color: rgb(0, 0, 0);
+  height: 45px;
+  width: 110px;
+  border-radius: 10px;
+  margin: 20px;
 }
-
-/* mouse over link */
-.about a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-.about a:active {
-    color: orangered;
-}
-
-.about h3{
-    color: #DBFF66;
-}
-
-.about ul{
-    color: #DBFF33;
-}
-
